@@ -1,0 +1,16 @@
+﻿<Window x:Class="EmployeeManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Управление персоналом" Height="500" Width="900">
+    <Grid>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Left" Background="LightGray" Width="200">
+                <TextBlock Text="Меню" FontSize="18" FontWeight="Bold" Margin="10"/>
+                <Button Content="Главная страница" Click="NavigateToHomePage" Height="50" Margin="10"/>
+                <Button Content="Список сотрудников" Click="NavigateToEmployeeListPage" Height="50" Margin="10"/>
+            </StackPanel>
+
+            <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        </DockPanel>
+    </Grid>
+</Window>
